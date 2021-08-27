@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CV Maksim Khvesko</title>
+    <style>
+        @media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
+        @media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+        @media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
+        
+        html, body, p {
+           padding: 0;
+           margin: 0; 
+        }
+        .new-font {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        .h1 {
+            font-size: 40px;
+            margin-top: 0;  
+        }
+
+        h2 {
+            color:black;
+            font-size: 36px;
+        }
+        .bold-text {
+            font-weight: bold;
+        }
+        .cyan-text {
+            color:cyan;
+        }
+        .purple {
+            background-image: url("./фон.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .white-text {
+            color:white;
+        }
+
+        .gray-text {
+            color:#433A5E
+        }
+        .block1 {
+            width: 980px;
+            margin:auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .block1.no-padding-top {
+            padding-top: 0;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+        .exp {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .exp li {
+            margin: 10px 0;
+
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color:cyan;
+        }
+
+        .achievents {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .achievents li {
+            background: url("./icon-ok.png") no-repeat left center;
+            padding-left: 70px;
+            margin: 20px 0;
+        }
+
+        .str-points {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            column-count: 2;
+        }
+
+        .str-points li {
+            background: url("./icon-ok-2.png") no-repeat left center;
+            padding-left: 70px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            margin: 30px 0;
+            margin-top: 0;
+
+        }
+
+        .logo {
+            width: 980px;
+        }
+        .name-tag {
+           font-size: 32px;
+           letter-spacing: 6px;
+        }
+        .paragraph {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .hands-bg {
+            background-image: url("./credo-bg.png");
+            background-position: center;
+            background-size: cover;
+            padding-bottom: 30px;
+            font-size: 24px;
+
+        }
+        .circle-img {
+            border-radius: 50%;
+            width: 200px;
+        }
+
+        .mini-img {
+            width: 30px;
+            height: 30px;
+            margin-top: 40px;
+            cursor: pointer;
+            
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #contact-form input,  #contact-form textarea {
+            padding: 20px;/*отступы*/
+            margin-bottom: 30px; /*расстояние между элементамми*/
+            font-size: 20px;/*размер шрифта*/
+            font-weight: bold;/*толщина шрифта*/
+            outline: none;/*фиксит стандартную галимую обводку*/
+            width: 934px;
+            border: none;/*убираем стандартную рамку*/
+            border: 3px solid #00ECBB;/*задаем новую рамку*/
+        }
+
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+            height: 100px;
+        }
+
+        input#submit {
+            width: 350px;
+            cursor: pointer;
+            background: #00ECBB;
+            color:blue;
+            font-size: 24px;
+        }
+
+        #gotop {
+            text-decoration: none;
+            display: inline-block;
+            height: 74px;
+            width: 74px;
+            background: #00ECBB;
+            color:blue;
+            font-size: 50px;
+            font-weight: bold;
+            text-align:center;
+            position:fixed;
+            bottom: 80px;
+            right: 60px;
+        }
+
+        .logo-container {
+            width: 980px;
+            height: 468px;
+
+            background-image: url("./first_bg.jpg");
+            background-size: cover;
+
+            box-shadow: 0px -120px 50px 0px rgba(0,0,0,0.8) inset;
+        }
+
+        .text-overlap {
+            position: relative;
+            padding: 0 60px;
+            top: -70px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="gray-text new-font">
+    <div>
+        <div class="purple">
+            <div class="block1" id="navigation">
+             <ul class="cyan-text nav" style="padding-top: 20px;">
+                <li><span class="bold-text cyan-text name-tag">Максим <br> Хвесько</span></li>
+                <li><a href="#experience">Опыт работы</a></li>
+                <li><a href="#achievents">Достижения</a></li>
+                <li><a href="#strong">Сильные стороны</a></li>
+                <li><a href="#private">Личное</a></li>
+                 <li><a href="#contact">Контакты</a></li>
+             </ul>
+
+            <!--<img class="logo" src="./first_bg.jpg" alt="Мое прекрасное фото">-->
+            <div class="logo-container"></div>
+
+            <p class="white-text paragraph text-overlap">Целеустремлённый медик. Учусь языкам программирования самостоятельно
+            для перехода в IT, потому что вижу перспективность данной профессии.</p>
+            <h2 class="white-text">Фельдшер с большим будущим в IT</h2>
+        </div>      
+     </div> 
+        
+        <div class="block1" id="experience">
+
+            <h2>Опыт работы</h2>
+            <ol class="exp">
+                <li>
+                    <span class="bold-text">июль 2016-август 2017</span> - Фельдшер амбулатории
+                </li>
+                <li>
+                    <span class="bold-text">август 2017-май 2018</span> - Фельдшер скоро помощи
+                </li>
+                <li>
+                    <span class="bold-text">май 2018-август 2020</span> - Фельдшер медицинской части ИУ
+                </li>
+                <li>
+                    <span class="bold-text">август 2020-настоящее время</span> - фельдшер амбулатории
+                </li>
+            </ol>
+        </div>
+        
+        <div class="block1 no-padding-top" id="achievents">
+            <h2>Мои достижения</h2>
+            <p>
+                Главные достижения за последние несколько лет:
+            </p>
+            <ul class="achievents">
+                <li><span class="bold-text">Стал отцом(дважды)</span><br>Женился в 2016 году и не капли не пожалел</li>
+                <li><span class="bold-text">Открыл для себя сферу IT</span><br>Каждый день я повышаю свою квалификацию</li>
+                <li><span class="bold-text">За время самообучения получил несколько сертефикатов по ЯП</span><br>А я целеустремлённый</li>
+                <li><span class="bold-text">Успешно прохожу различные интенсивы и курсы</span><br>Некоторые сертификаты это подтверждают</li>
+            </ul>
+        </div>
+        
+
+        <div class="block1 no-padding-top" id="strong">
+            <h2>Мои главные качества:</h2>
+            <ul class="str-points">
+                <li>обучаемость</li>
+                <li> усидчивость</li>
+                <li>стресоусточивость</li>
+                <li> ответственность</li>
+                <li>коммуникабельный</li>
+                <li> верен совему слову</li>
+                <li>без вредных привычек</li>
+                <li> стремлюсь к знаниям</li>
+                <li>сносный английский</li>
+                <li>не надо учить с "нуля"</li>
+            </ul>
+        </div>
+        
+
+        <div class="hands-bg">
+            <div class="block1">
+                <h2 class="white-text">
+                    Главный принцип в работе
+                </h2>
+                <p class="white-text">
+                    <i>"Если взялся за дело - доведи начатое до конца"</i>
+                </p>
+             </div>
+        </div>
+        
+        <div class="block1" id="private">
+            <h2>Немного личного</h2> 
+            <p class="paragraph">
+                Мне 25 лет, женат, имею 2 замечательных детей. Образование - среднеспециальное медицинское (Фельдшер-акушер). 
+                Я начал обучаться языкам программирования, таким как  <strong>Java Script, CSS, HTML, Apex, MySQL</strong>, 
+                 самостоятельно.<br>Прошел ознакомительной курс про программированию Intro to IT от <a href="https://leverxpeople.by">LewerX Groupe</a> , различные курсы 
+                 <a href="https://stepik.org/">Stepic</a><br>Данное CV  можно расценивать как пример применения практических навыков в разработке.<br>Обучаем, готов обучаться новым языкам или уже знакомым языкам более детально. Мечтаю иметь достойную заработную плату и интересную работу. Иду к своей мечте!
+                </p>
+
+                <div class="img-container">
+                
+            <img class="circle-img" src="./family.jpg" alt="весёленькая картиночка">
+            <img class="circle-img" src="./doctor.jpg" alt="здесь тоже такая же">
+            <img class="circle-img" src="./lang.png" alt="тут что нашел">
+                        
+                </div>
+        </div>
+        
+            <div class="block1 no-padding-top" id="contact">
+            <h2> Контакты</h2>
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FID" placeholder="Ф.И.О.">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="massage"  placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Отправить" >
+            </form>
+
+            <a id="gotop" href="#navigation">
+                ☝
+            </a>
+    </div>
+
+        <div class="block1">
+            <p>Можно просто позвонить +375(29)849-92-98</p><br> Или:
+            <a href="https://www.instagram.com/prostohvisko/"><img class="mini-img" src="./instagram.png" alt="instagram"></a>
+            <a href="https://vk.com/xvisalder_2"><img class="mini-img" src="./VK_Blue_Logo_t-340x340.png" alt="VK"></a>
+            <a href="https://my.mail.ru/mail/prostoxvisko/"><img class="mini-img" src="./Logo_mail.png" alt="Mail.ru"></a>
+            <a href="https://github.com/prostoxvisko/"><img class="mini-img" src="./git.png" alt="GitHub"></a>
+                        
+                </div>
+
+
+    </div>
+</body>
+</html>
